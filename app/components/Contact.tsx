@@ -48,10 +48,10 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
   };
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-teal-50" id="contact">
+    <section className="py-16 px-4 md:px-12" style={{ backgroundColor: "#0f766e" }} id="contact">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold mb-6 text-center">Get In Touch</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <h2 className="text-3xl font-bold mb-6 text-center text-black">Get In Touch</h2>
+        <form onSubmit={handleSubmit} className="space-y-4 text-black">
           <div>
             <input
               type="text"
@@ -59,7 +59,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full bg-gray-800 text-white font-bold p-2 rounded placeholder-gray-400"
             />
             {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
@@ -70,7 +70,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               placeholder="Phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full bg-gray-800 text-white font-bold p-2 rounded placeholder-gray-400"
             />
             {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
           </div>
@@ -81,7 +81,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full bg-gray-800 text-white font-bold p-2 rounded placeholder-gray-400"
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
@@ -91,7 +91,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               placeholder="What brings you here?"
               value={formData.message}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full bg-gray-800 text-white font-bold p-2 rounded placeholder-gray-400"
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
@@ -102,7 +102,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               placeholder="Preferred time to reach you"
               value={formData.time}
               onChange={handleChange}
-              className="w-full border p-2 rounded"
+              className="w-full bg-gray-800 text-white font-bold p-2 rounded placeholder-gray-400"
             />
             {errors.time && <p className="text-red-500 text-sm">{errors.time}</p>}
           </div>
@@ -114,12 +114,12 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElemen
               onChange={handleChange}
               className="mr-2"
             />
-            <label>I agree to be contacted</label>
+            <label className="text-black">I agree to be contacted</label>
           </div>
           {errors.agree && <p className="text-red-500 text-sm">{errors.agree}</p>}
           <button
             type="submit"
-            className="w-full bg-teal-500 text-white py-2 rounded hover:bg-teal-600 transition"
+            className="w-full bg-teal-500 text-white py-2 rounded hover:bg-teal-600 transition font-bold"
           >
             Submit
           </button>
