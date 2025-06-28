@@ -14,10 +14,12 @@ export default function Contact() {
 
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({ ...formData, [name]: type === "checkbox" ? checked : value });
-  };
+const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const target = e.target as HTMLInputElement; // 👈 fix here
+
+  const { name, value, type, checked } = target;
+  setFormData({ ...formData, [name]: type === "checkbox" ? checked : value });
+};
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
