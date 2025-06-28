@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Grow My Therapy — Dr. Serena Blake
 
-## Getting Started
+This is a modern, responsive website built for Dr. Serena Blake, a licensed clinical psychologist.  
+The website showcases her services, introduces her professional background, answers frequently asked questions, and provides a contact form to schedule sessions.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Hero section** with inviting headline and call-to-action
+- **About section** introducing Dr. Serena Blake
+- **Services section** detailing therapy offerings
+- **FAQ section** to address common client questions
+- **Contact form** with validation and submission feedback
+- Consistent **blue-themed design** with black text for clarity
+- Responsive and mobile-friendly layout
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) (React framework)
+- TypeScript
+- Tailwind CSS for styling
+- Vercel for deployment
+- GitHub for version control
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💙 Design Goals
 
-## Learn More
+- Create a warm, professional, and inviting feeling
+- Easy for potential clients to navigate and learn about services
+- Encourage booking and contacting Dr. Blake
 
-To learn more about Next.js, take a look at the following resources:
+## 💌 Contact & Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is a personal portfolio / demo website.  
+If you'd like to contribute or adapt it for your own needs, feel free to fork and customize.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 🖥️ Live Demo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉 [Visit Live Site](https://growmytherapy-vb3h.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
